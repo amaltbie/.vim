@@ -25,6 +25,9 @@ au BufRead,BufNewFile */playbooks/*.yml set filetype=ansible
 let g:go_version_warning = 0
 nnoremap - :GoRun<CR>
 
+" Backspace enabled
+set bs=2
+
 " Lightline
 set laststatus=2
 set noshowmode
