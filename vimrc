@@ -25,8 +25,6 @@ au BufRead,BufNewFile */playbooks/*.yml set filetype=ansible
 let g:go_version_warning = 0
 nnoremap - :GoRun<CR>
 
-" Status Line
-set statusline=%f
 " Lightline
 set laststatus=2
 set noshowmode
