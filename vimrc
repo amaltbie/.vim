@@ -28,6 +28,9 @@ nnoremap - :GoRun<CR>
 " Backspace enabled
 set bs=2
 
+" Line Numbers
+set number
+
 " Lightline
 set laststatus=2
 set noshowmode
