@@ -27,3 +27,6 @@ nnoremap - :GoRun<CR>
 
 " Status Line
 set statusline=%f
+" Lightline
+set laststatus=2
+set noshowmode
