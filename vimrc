@@ -15,7 +15,7 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " Color Settings
-set background=dark
+" set background=dark
 
 " Ansible Settings
 au BufRead,BufNewFile */ansible/*.yml set filetype=ansible
