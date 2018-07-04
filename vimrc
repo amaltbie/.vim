@@ -38,3 +38,5 @@ set number
 set laststatus=2
 set noshowmode
 
+" Reload vimrc on save
+autocmd! bufwritepost $MYVIMRC source $MYVIMRC
