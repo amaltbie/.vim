@@ -21,7 +21,12 @@ au BufRead,BufNewFile */playbooks/*.yml set filetype=ansible
 
 " Vim-go Settings
 let g:go_version_warning = 0
-nnoremap - :GoRun<CR>
+au BufRead,BufNewFile *.go nnoremap - :GoRun<CR>
+
+" Python Settings
+au BufRead,BufNewFile reqs.txt nnoremap - :!pip install -r reqs.txt <CR>
+au BufRead,BufNewFile *.py nnoremap - :term python %<CR>
+au BufRead,BufNewFile test*.py nnoremap - :term pytest -v %<CR>
 
 " Backspace enabled
 set bs=2
