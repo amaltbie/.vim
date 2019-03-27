@@ -7,6 +7,7 @@ filetype plugin indent on
 
 " Open Nerdtree when opening a directory
 let NERDTreeShowHidden=1
+let NERDTreeIgnore = ['\.pyc$','\.swp$','\.swo']
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'set splitbelow' | exe 'term' | exe 'resize 24' | endif
@@ -20,6 +21,9 @@ set background=dark
 " Ansible Settings
 au BufRead,BufNewFile */ansible/*.yml set filetype=ansible
 au BufRead,BufNewFile */playbooks/*.yml set filetype=ansible
+
+" Jenkins Settings
+au BufRead,BufNewFile */*.jf set filetype=groovy
 
 " Vim-go Settings
 let g:go_version_warning = 0
